@@ -1,4 +1,6 @@
 document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault();
+
   const form = event.target;
 
   //... create your form object with the form inputs
