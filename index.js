@@ -14,4 +14,6 @@ document.querySelector("form").addEventListener("submit", (event) => {
     hashCustomerEmail: formObject.email,
     hashCustomerPhone: formObject.phone,
   });
+
+  window.location.replace("thankyou.html");
 });
