@@ -10,9 +10,9 @@ document.querySelector("form").addEventListener("submit", (event) => {
   };
 
   dataLayer.push({
-    event: "purchaseCompletedEC",
-    hashCustomerEmail: formObject.email,
-    hashCustomerPhone: formObject.phone,
+    event: "annaPurchaseEC",
+    unhashCustomerEmail: formObject.email,
+    unhashCustomerPhone: formObject.phone,
   });
 
   window.location.replace("thankyou.html");
