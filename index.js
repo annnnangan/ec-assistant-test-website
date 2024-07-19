@@ -16,6 +16,9 @@ document.querySelector("#unhashed-form").addEventListener("submit", (event) => {
     customerPhone: formObject.phone,
   });
 
+  console.log("Unhashed Customer Email Sent", formObject.email);
+  console.log("Unhashed Customer Phone Sent", formObject.phone);
+
   message.innerText = "Successfully submit form";
 });
 
@@ -36,6 +39,9 @@ document
       customerEmail: formObject.email,
       customerPhone: formObject.phone,
     });
+
+    console.log("Hashed Customer Email Sent", formObject.email);
+    console.log("Hashed Customer Phone Sent", formObject.phone);
 
     message.innerText = "Successfully submit form";
   });
