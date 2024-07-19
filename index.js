@@ -10,7 +10,8 @@ document.querySelector("#unhashed-form").addEventListener("submit", (event) => {
     phone: form.phone.value,
   };
 
-  dataLayer.push({
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
     event: "annaPurchaseEC",
     customerEmail: formObject.email,
     customerPhone: formObject.phone,
@@ -34,7 +35,8 @@ document
       phone: await hash(form.phone.value),
     };
 
-    dataLayer.push({
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
       event: "annaPurchaseEC",
       customerEmail: formObject.email,
       customerPhone: formObject.phone,
