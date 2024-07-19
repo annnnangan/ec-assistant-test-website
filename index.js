@@ -19,7 +19,7 @@ document.querySelector("#unhashed-form").addEventListener("submit", (event) => {
   console.log("Unhashed Customer Email Sent", formObject.email);
   console.log("Unhashed Customer Phone Sent", formObject.phone);
 
-  message.innerText = "Successfully submit form";
+  message.innerText = "Successfully submit unhashed form";
 });
 
 document
@@ -43,7 +43,7 @@ document
     console.log("Hashed Customer Email Sent", formObject.email);
     console.log("Hashed Customer Phone Sent", formObject.phone);
 
-    message.innerText = "Successfully submit form";
+    message.innerText = "Successfully submit hashed form";
   });
 
 async function hash(string) {
